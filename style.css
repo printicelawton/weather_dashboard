@@ -4,26 +4,55 @@
     margin: 0;
     box-sizing: 0;
 }
+
 html{
     font-family: 'Montserrat';
     font-weight: 500;
 }
+
 section{
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgb(24, 24, 58);
+    background-color: #35281E;
     padding: 100px 0;
-}
+    }
 .container{
     width: 90%;
     max-width: 400px;
-    background-color: transparent;
+    background-color: #6d6d1e;
     margin: 0 auto;
     height: 600px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+ }
+ .container::after{
+     position:absolute;
+     content: '';
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: 120%;
+     width: 120%;
+     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/ecuador.jpeg);
+     background-position: center;
+     background-size: cover; 
+     filter: blur(3px);
+     z-index: -1;
+ }
+form{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
