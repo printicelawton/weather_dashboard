@@ -2,9 +2,9 @@ const key = 'c1a9a48ed6c08d5300c521cb4e7f1c42'
 const formEl = document.querySelector('form');
 const details = document.querySelector('.details');
 
-formEl.addEventListener('submit',(e) => {
+formEl.addEventListener("submit",(e) => {
     e.preventDefault();
-    // details.innerHTML = '<h1>Loading...<h1>';
+    details.innerHTML = '<h1>Loading...<h1>';
     const location = e.target.location.value;
     weatherApp(location);
 });
@@ -24,19 +24,20 @@ async function weatherApp(location){
     console.log(data)
     return data;
 }
-//dynamically generate html from the generate html function 
+//dynamically generate html from the generate html function ... not working
 function generateHTML(data){
     const html = `
     <h1 class="temp">${data.current.temperature}°C</h1>
     <h1 class="status">${data.current.weather_descriptions.map(item => item).join(' ')}</h1>
     <div class="more-info">
-        <p>info-1</p>
-        <p>info-2</p>
-        <p>info-3</p>
-        <p>info-4</p>
+        <p>Humidity: ${data.current.humidity}%</p>
+        <p>Wind Speed: ${data.current.wind_speed}km/h</p>
+        <p>Wind Direction: ${data.current.wind_dir}</p>
+        <p>Pressure: ${data.current.pressure}MB</p>
     </div>
+    <div class = "query">${data.request.query}</div>
     `;
-   details.innerHTML = html;
+   Element.details.innerHTML = html;
 
    };
 

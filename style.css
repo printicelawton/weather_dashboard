@@ -62,7 +62,7 @@ form input{
     outline: none;
     border: none;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 22px;
     padding: 10px;
     color: whitesmoke;
 }
@@ -102,5 +102,9 @@ form input::placeholder{
 
 .more-info p{
     margin: 10px 0;
-    font-size: 20px ;
+    font-size: 15px ;
+}
+
+.query {
+    margin-top: 20px;
 }
