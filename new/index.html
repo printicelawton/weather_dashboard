@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- my CSS -->
+        <link href="style.css" rel="stylesheet">
+        
+        <title>OpenWeatherMap Dashboard</title>
+    </head>
+    <body>
+ 
+        <span>
+            <h1>Weather Dashboard</h1>
+        </span>
+
+        <!-- search field and history -->
+        <div class="container-fluid">
+            <div class="row">
+              <aside class="col-3">
+                <!-- the search field -->
+                <label for="form-inline">Search for a City:</label>
+                <br>
+                <input class="form-inline" id="search" type="text">
+                <!-- the search button -->
+                <button type="button" class="btn btn-primary" id="searchbutton">
+                    <i class="fas fa-search"></i>
+                </button>
+                <br>
+            
+                <!-- search history list -->
+                <ul class="col-sm list-group historylist"></ul>
+              </aside>
+                
+
+        <!-- current weather and five-day forecast -->
+            <div class="col-lg-9">
+                <div class="row">
+                <!-- today's forecast -->
+                <div class="currentday mt-3">
+                </div></div>
+            
+                <!-- five day forecast -->
+                <div class="row fiveday">
+                </div></div>
+            </div>
+        </div> 
+     
+        
+
+        <!-- jQuery and JS script files  -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
