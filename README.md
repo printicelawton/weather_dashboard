@@ -1,6 +1,8 @@
 # Weather_Dashboard
 Weather dashboard that runs in the browser and features dynamically generated HTML and CSS.  Uses the [Weather Stack API] (https://weatherstack.com/documentation) to retrieve weather data for cities. 
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![Screen Shot 2021-06-10 at 4 46 11 PM](https://user-images.githubusercontent.com/78760719/121595995-e24c4680-ca0c-11eb-9c44-6cceb5debdfe.png)
 
 ## Description
