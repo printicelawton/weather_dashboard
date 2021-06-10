@@ -31,5 +31,5 @@ Searched cities will be added below the search button and can be clicked on to d
 * Font Awesome
 
 ## Links
-* Deployed Application: 
-* GitHub Repository Link: 
+* Deployed Application: https://printicelawton.github.io/weather_dashboard/
+* GitHub Repository Link: https://github.com/printicelawton/weather_dashboard
