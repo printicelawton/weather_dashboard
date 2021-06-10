@@ -1,6 +1,8 @@
 # Weather_Dashboard
 Weather dashboard that runs in the browser and features dynamically generated HTML and CSS.  Uses the [Weather Stack API] (https://weatherstack.com/documentation) to retrieve weather data for cities. 
 
+![Screen Shot 2021-06-10 at 4 46 11 PM](https://user-images.githubusercontent.com/78760719/121595995-e24c4680-ca0c-11eb-9c44-6cceb5debdfe.png)
+
 ## Description
 This is a weather forecast dashboard app. Users are able to enter a city name in the search box and have current weather conditions displayed for that city, as well a five day forecast.
 
